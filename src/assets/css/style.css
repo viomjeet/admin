@@ -75,7 +75,7 @@ body {
 
 .cus_card {
     position  : relative;
-    min-height: 200px;
+    min-height: 250px;
     overflow  : hidden;
     background: url('https://i.stack.imgur.com/h6viz.gif') no-repeat center 50%;
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);

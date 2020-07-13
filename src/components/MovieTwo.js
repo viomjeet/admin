@@ -43,8 +43,8 @@ const MovieTwo = ({ data }) => {
                     return (
                         <Col xs={6} sm={6} md={4} lg={3} className="mb-5" key={index}>
                             <Card className="cus_card">
-                                <Card.Img src={'/Slice/' + items['poster-image']} />
-                                <strong class="movie_name">{items.name}</strong>
+                                <Card.Img src={process.env.PUBLIC_URL +'/Slice/' + items['poster-image']} />
+                                <strong className="movie_name">{items.name}</strong>
                             </Card>
                         </Col>
                     )

@@ -2,6 +2,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.navbar-nav a.active{color: #f00!important;}
+
 .btn:active,
 .btn:focus,
 .btn:visited,

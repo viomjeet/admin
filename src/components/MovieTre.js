@@ -38,20 +38,20 @@ const MovieTre = ({ data }) => {
                 </Container>
             </div>
             <Container>
-            {movies.length <= 0 ? <h1 className="display-4 text-center text-secondary">0 Result</h1> :
-                <Row> {movies.map((items, index) => {
-                    return (
-                        <Col xs={6} sm={6} md={4} lg={3} className="mb-5" key={index}>
-                            <Card className="cus_card">
-                                <Card.Img src={'/Slice/' + items['poster-image']} />
-                                <strong class="movie_name">{items.name}</strong>
-                            </Card>
-                        </Col>
-                    )
-                })}
-                </Row>
-            }
-        </Container>
+                {movies.length <= 0 ? <h1 className="display-4 text-center text-secondary">0 Result</h1> :
+                    <Row> {movies.map((items, index) => {
+                        return (
+                            <Col xs={6} sm={6} md={4} lg={3} className="mb-5" key={index}>
+                                <Card className="cus_card">
+                                    <Card.Img src={process.env.PUBLIC_URL + '/Slice/' + items['poster-image']} />
+                                    <strong className="movie_name">{items.name}</strong>
+                                </Card>
+                            </Col>
+                        )
+                    })}
+                    </Row>
+                }
+            </Container>
 
         </React.Fragment>
     )

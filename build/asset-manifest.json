@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/diagnal2/static/css/main.6ba2b295.chunk.css",
+    "main.js": "/diagnal2/static/js/main.76ca77ea.chunk.js",
+    "main.js.map": "/diagnal2/static/js/main.76ca77ea.chunk.js.map",
+    "runtime-main.js": "/diagnal2/static/js/runtime-main.c5097423.js",
+    "runtime-main.js.map": "/diagnal2/static/js/runtime-main.c5097423.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/diagnal2/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.8397fa31.chunk.js": "/diagnal2/static/js/2.8397fa31.chunk.js",
+    "static/js/2.8397fa31.chunk.js.map": "/diagnal2/static/js/2.8397fa31.chunk.js.map",
+    "index.html": "/diagnal2/index.html",
+    "precache-manifest.376e671e888f735c2ec2eb475a5adb93.js": "/diagnal2/precache-manifest.376e671e888f735c2ec2eb475a5adb93.js",
+    "service-worker.js": "/diagnal2/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/diagnal2/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.6ba2b295.chunk.css.map": "/diagnal2/static/css/main.6ba2b295.chunk.css.map",
+    "static/js/2.8397fa31.chunk.js.LICENSE.txt": "/diagnal2/static/js/2.8397fa31.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c5097423.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.8397fa31.chunk.js",
+    "static/css/main.6ba2b295.chunk.css",
+    "static/js/main.76ca77ea.chunk.js"
+  ]
+}

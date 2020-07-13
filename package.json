@@ -2,7 +2,7 @@
   "name": "inter",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://viomjeet.github.io/diagnal2",
+  "homepage": "http://viomjeet.github.io/movies",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",

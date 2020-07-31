@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import MovieOne from './components/MovieOne';
 import MovieTwo from './components/MovieTwo';
 import MovieTre from './components/MovieTre';
-import { BrowserRouter as Router, HashRouter, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, NavLink } from 'react-router-dom';
 import Pagenotfound from './components/Pagenotfound';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 function App() {
@@ -20,20 +20,20 @@ function App() {
         <Router>
           <Navbar bg="dark" variant="dark" className="movieBar mb-4">
             <Container>
-              <Link className="navbar-brand" to="/">Movies</Link>
+              <Link className="navbar-brand" to="/virtualbox/">Movies</Link>
               <Navbar.Brand href="#home"></Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Nav className="ml-auto">
-                  <Link className="nav-link" /*activeClassName='active' exact*/ to="/">One</Link>
-                  <Link className="nav-link" /*activeClassName='active' exact*/ to="/2">Two</Link>
-                  <Link className="nav-link" /*activeClassName='active' exact*/ to="/3">Three</Link>
+                  <NavLink className="nav-link" activeClassName='active' exact to="/virtualbox/">One</NavLink>
+                  <NavLink className="nav-link" to="/virtualbox/2">Two</NavLink>
+                  <NavLink className="nav-link" to="/virtualbox/3">Three</NavLink>
                 </Nav>
             </Container>
           </Navbar>
           <Switch>
-            <Route exact path="/"><MovieOne data={movieone} /></Route>
-            <Route path="/2"><MovieTwo data={movietwo} /></Route>
-            <Route path="/3"><MovieTre data={movietri} /></Route>
+            <Route exact path="/virtualbox/"><MovieOne data={movieone} /></Route>
+            <Route path="/virtualbox/2"><MovieTwo data={movietwo} /></Route>
+            <Route path="/virtualbox/3"><MovieTre data={movietri} /></Route>
             <Route path="/*"><Pagenotfound /></Route>
           </Switch>
         </Router>

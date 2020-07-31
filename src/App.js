@@ -20,20 +20,20 @@ function App() {
         <Router>
           <Navbar bg="dark" variant="dark" className="movieBar mb-4">
             <Container>
-              <Link className="navbar-brand" to="/virtualbox/">Movies</Link>
+              <Link className="navbar-brand" to="/moviebox/">Movies</Link>
               <Navbar.Brand href="#home"></Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Nav className="ml-auto">
-                  <NavLink className="nav-link" activeClassName='active' exact to="/virtualbox/">One</NavLink>
-                  <NavLink className="nav-link" to="/virtualbox/2">Two</NavLink>
-                  <NavLink className="nav-link" to="/virtualbox/3">Three</NavLink>
+                  <NavLink className="nav-link" activeClassName='active' exact to="/moviebox/">One</NavLink>
+                  <NavLink className="nav-link" to="/moviebox/2">Two</NavLink>
+                  <NavLink className="nav-link" to="/moviebox/3">Three</NavLink>
                 </Nav>
             </Container>
           </Navbar>
           <Switch>
-            <Route exact path="/virtualbox/"><MovieOne data={movieone} /></Route>
-            <Route path="/virtualbox/2"><MovieTwo data={movietwo} /></Route>
-            <Route path="/virtualbox/3"><MovieTre data={movietri} /></Route>
+            <Route exact path="/moviebox/"><MovieOne data={movieone} /></Route>
+            <Route path="/moviebox/2"><MovieTwo data={movietwo} /></Route>
+            <Route path="/moviebox/3"><MovieTre data={movietri} /></Route>
             <Route path="/*"><Pagenotfound /></Route>
           </Switch>
         </Router>
